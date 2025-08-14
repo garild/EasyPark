@@ -10,10 +10,6 @@ public record PayPalOptions
     public string? ClientId { get; init; }
     [Required]
     public string? ClientSecret { get; init; }
-    [Required, Url]
-    public Uri? ApiBaseUrl  { get; init; }
     [Required]
     public string? Environment { get; init; }
-    [Required]
-    public string? ApiVersion { get; init; }
 }
